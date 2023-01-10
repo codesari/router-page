@@ -1,13 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import css from "../assets/img/logo_css.png";
+import jsLogo from "../assets/img/js-logo.png";
 
-const Css = () => {
+const Javascript = () => {
   const navigate = useNavigate();
   return (
     <div className="card">
-      <img src={css} alt="" />
-      <h3>CSS3 Styling</h3>
+      <img src={jsLogo} alt="" width="200px" />
+      <h3>JavaScript</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
         voluptates voluptas similique qui ipsa sunt aliquam? Quos minima
@@ -41,4 +41,4 @@ const Css = () => {
   );
 };
 
-export default Css;
+export default Javascript;
