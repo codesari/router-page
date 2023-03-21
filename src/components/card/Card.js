@@ -8,18 +8,24 @@ const Card = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="box">
-      {data.map((item) => {
-        const { name, text, img } = item;
-        return (
-          <div onClick={() => navigate(`/${name}`)}>
-            <img src={img} alt="" />
-            <h3>{name}</h3>
-            <p>{text}</p>
-          </div>
-        );
-      })}
-    </div>
+    
+      <div class="row">
+        {data.map((item) => {
+          const { name, text, img } = item;
+          return (
+            
+              <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+                <div onClick={() => navigate(`/${name}`)}>
+                  <img src={img} alt="" width="250px"/>
+                  <h3>{name}</h3>
+                  <p>{text}</p>
+                </div>
+              </div>
+            
+          );
+        })}
+      </div>
+    
   );
 };
 
